@@ -1,0 +1,30 @@
+<div>
+    <section class="heading">
+        <span class="page-title font-weight-bold font-italic">[{{title}}]</span>
+      </section>
+    <ul>
+      <li>
+        <label>ID:</label>
+        <input [(ngModel)]="newFriend.id" class="rounded" type="number"/>
+      </li>
+      <li>
+        <label>Name:</label>
+        <input [(ngModel)]="newFriend.name" class="rounded" type="text"/>
+      </li>
+      <li>
+        <label>Age:</label>
+        <input [(ngModel)]="newFriend.age" class="rounded" type="number"/>
+      </li>
+      <li>
+        <label>Email:</label>
+        <input [(ngModel)]="newFriend.email" class="rounded" type="text"/>
+      </li>
+      <li>
+        <label>BFF?:</label>
+        <input [(ngModel)]="newFriend.bff" class="rounded" type="checkbox"/>
+      </li>
+    </ul>
+    <span>
+      <button (click)="save()" class="btn btn-sm btn-primary">Save</button>
+    </span>
+</div>

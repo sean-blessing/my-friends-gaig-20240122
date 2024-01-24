@@ -1,0 +1,23 @@
+<div>
+    <section class="heading">
+      <span class="page-title font-weight-bold font-italic">[{{title}}]</span>
+    </section>
+    <table *ngIf="friends" class="table table-striped table-bordered table-hover table-sm">
+      <thead class="thead-dark">
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Email</th>
+        <th scope="col">BFF</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let friend of friends">
+          <td>{{ friend.id }}</td>
+          <td>{{ friend.name }}</td>
+          <td>{{ friend.age }}</td>
+          <td>{{ friend.email }}</td>
+          <td>{{ friend.bff }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
